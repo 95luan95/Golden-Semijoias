@@ -177,16 +177,16 @@ public class FrmCadastroAddQTDEstoque extends javax.swing.JInternalFrame {
             itemVendaQTD.setIdEstoque(bean.retornaIdEstoque(id_Produto, id_tamanho));
             itemVendaQTD.setQtdProduto(Integer.parseInt(this.QTDTextField.getText()));
             
-            frmCadastroVenda.addItemArrayItemVendaDTO(itemVendaQTD);
-            
             int atualQTD = bean.getQTD(id_Produto, id_tamanho);
 
             int resultado;
             
-            if(atualQTD < t.getTamanho()){
+            if(atualQTD < t.getTamanho() || t.getTamanho() <= 0){
                 JOptionPane.showMessageDialog(this, "Estoque insuficiente!", "", WIDTH);
                 return;
             }else{
+                frmCadastroVenda.addItemArrayItemVendaDTO(itemVendaQTD);
+                
                 resultado = atualQTD - t.getTamanho();
                 
                 if(bean.tamanhoExiste(id_tamanho, id_Produto) == -1){
