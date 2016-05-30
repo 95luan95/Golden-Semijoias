@@ -157,7 +157,7 @@ public class CrudVenda extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
         ConexaoMySQL con = new ConexaoMySQL();
         Map parametros = new HashMap();
-        String relatorio = "relatorios\\Vendas.jasper";
+        String relatorio = "C:\\Users\\Luan\\Documents\\NetBeansProjects\\SemiJoias\\relatorios\\Vendas.jasper";
         try {
             JasperPrint jasperPrint = JasperFillManager.fillReport(relatorio, parametros, con.Conectar());
             JasperViewer view = new JasperViewer(jasperPrint, false);

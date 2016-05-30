@@ -91,9 +91,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="IDTextField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="1"/>
-      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IDTextFieldActionPerformed"/>
       </Events>
@@ -104,9 +101,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JPasswordField" name="SenhaPasswordField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="admin"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>

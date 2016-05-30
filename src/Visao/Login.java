@@ -62,7 +62,6 @@ public class Login extends javax.swing.JDialog {
 
         jLabel1.setText("ID:");
 
-        IDTextField.setText("1");
         IDTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IDTextFieldActionPerformed(evt);
@@ -70,8 +69,6 @@ public class Login extends javax.swing.JDialog {
         });
 
         jLabel4.setText("Senha:");
-
-        SenhaPasswordField.setText("admin");
 
         jButton1.setText("Sair");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
